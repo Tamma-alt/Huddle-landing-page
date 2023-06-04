@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 50vh;
+    margin-bottom: 2rem;
+}
+
+/* hero styling */
+.hero {
+    background: hsl(193, 100%, 96%) url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: .7rem .3rem;
+}
+
+.btn {
+    padding: .5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 1px 1px 2px #888888;
+}
+
+.main__hero {
+    text-align: center;
+    margin: 2rem;
+}
+
+.section-header,
+.section-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pink-btn {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 1rem 3rem;
+    margin: 2rem 0 3rem 0;
+    border: none;
+    border-radius: 2rem;
+}
+
+/* card styling */
+.grow__together,
+.flowing__conversations,
+.your__users,
+.call-to-action {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 90%;
+    min-height: max-content;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.card {
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.call-to-action {
+    position: relative;
+    max-width: 100%;
+    width: 90%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.6rem;
+    margin-top: 10rem;
+    margin-bottom: -6.6rem;
+
+}
+
+/* footer styling */
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 8rem 0rem 1rem;
+
+}
+
+footer .logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    margin: 1rem;
+
+}
+
+.contact__details div {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.contact__details div img {
+    margin-top: .4rem;
+    margin-right: 1rem;
+}
+
+.footer__links {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-li li {
+    margin-bottom: 1rem;
+}
+
+.socials {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials i {
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* larger screens */
+@media (min-width: 700px) {
+    .container {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .hero {
+        background: hsl(193, 100%, 96%) url(images/bg-hero-desktop.svg);
+        padding: 2rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .card {
+        text-align: justify;
+    }
+
+    .card-img {
+        width: 40%;
+    }
+
+    .section-text {
+        width: 50%;
+    }
+
+}
